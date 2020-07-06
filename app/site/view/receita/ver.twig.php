@@ -12,6 +12,7 @@
 
 
     <a href="{{BASE}}?url=editar&id={{receita.id}}" class="btn btn-sm btn-warning">Editar</a>
+    <a href="{{BASE}}?url=thumb&id={{receita.id}}" class="btn btn-sm btn-info">Thumb</a>
     <a href="{{BASE}}?url=delete&id={{receita.id}}" class="btn btn-sm btn-danger" onclick="return confirm('Deseja realmente deletar?')">Delete</a>
 
     <hr>

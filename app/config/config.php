@@ -6,6 +6,8 @@ define('HOST', 'http://localhost/quase-tudo-gostoso/');
 
 define('DATE_TIME', 'd/m/Y H:i:s');
 
+define('IMAGE_PATH', 'resources/thumbs/');
+
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
@@ -16,10 +18,12 @@ $router = [
     'home' => 'HomeController@index',
     'nova' => 'ReceitaController@nova',
     'editar' => 'ReceitaController@editar',
+    'thumb' => 'ReceitaController@thumb',
     'ver' => 'ReceitaController@ver',
     'busca' => 'ReceitaController@busca',
     /* INTERNAL */
     'delete' => 'ReceitaController@delete',
     'insert' => 'ReceitaController@insert',
-    'update' => 'ReceitaController@update'
+    'update' => 'ReceitaController@update',
+    'updateThumb' => 'ReceitaController@updateThumb'
 ];

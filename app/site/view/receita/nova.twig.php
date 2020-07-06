@@ -8,7 +8,7 @@
 
     <hr>
     
-    <form action="{{BASE}}?url=insert" method="post" id="frmNovaReceita">
+    <form action="{{BASE}}?url=insert" method="post" id="frmNovaReceita" enctype="multipart/form-data">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -21,6 +21,15 @@
                 <div class="form-group">
                     <label for="txtTags">Tags</label>
                     <input type="text" class="form-control" id="txtTags" name="txtTags" value="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="flThumb">Thumb</label>
+                    <input type="file" class="form-control-file" id="flThumb" rows="10" name="flThumb" accept="image/*">
                 </div>
             </div>
         </div>

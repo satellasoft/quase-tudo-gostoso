@@ -21,6 +21,11 @@ class Receita
         $this->dataPublicacao = $dataPublicacao;
     }
 
+    public function setThumb($thumb)
+    {
+        $this->thumb = $thumb;
+    }
+
     public function getId()
     {
         return $this->id;

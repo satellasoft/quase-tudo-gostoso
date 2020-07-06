@@ -13,6 +13,7 @@ class Controller
         $twig->addGlobal('BASE', BASE);
         $twig->addGlobal('DATE_TIME', DATE_TIME);
         $twig->addGlobal('HOST', HOST);
+        $twig->addGlobal('IMAGE_PATH', IMAGE_PATH);
 
         echo $twig->render($view . '.twig.php', $params);
     }
